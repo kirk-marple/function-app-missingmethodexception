@@ -27,7 +27,7 @@
     <ItemGroup>
         <PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.1.0" />
         <!-- NOTE: upgrading this to 2.16.0 or 2.17.0 causes missing method exception -->
-        <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.17.0" />
+        <PackageReference Include="Microsoft.ApplicationInsights" Version="2.17.0" />
         <PackageReference Include="Microsoft.Azure.Functions.Extensions" Version="1.1.0" />
         <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="3.0.11" />
     </ItemGroup>
