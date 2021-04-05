@@ -1,0 +1,41 @@
+{
+    "version": "2.0",
+    "extensions": {
+        "extendedSessionsEnabled": "true",
+        "extendedSessionIdleTimeoutInSeconds": 120
+    },
+    "logging": {
+        "fileLoggingMode": "always",
+        "logLevel": {
+            "default": "Debug",
+            "Function": "Debug",
+            "Host": "Debug",
+            "Host.Results": "Debug",
+            "Host.Aggregator": "Debug",
+            "Host.Triggers.DurableTask": "Debug"
+        },
+        "applicationInsights": {
+            "samplingSettings": {
+                "isEnabled": true,
+                "maxTelemetryItemsPerSecond": 1500,
+                "evaluationInterval": "01:00:00",
+                "initialSamplingPercentage": 100.0,
+                "samplingPercentageIncreaseTimeout": "00:00:01",
+                "samplingPercentageDecreaseTimeout": "00:00:01",
+                "minSamplingPercentage": 50.0,
+                "maxSamplingPercentage": 100.0,
+                "movingAverageRatio": 1.0,
+                "excludedTypes": "Dependency;Event;Exception;Request;Trace",
+                "includedTypes": "PageView"
+            },
+            "enableLiveMetrics": true,
+            "enableDependencyTracking": true,
+            "enablePerformanceCountersCollection": true,
+            "httpAutoCollectionOptions": {
+                "enableHttpTriggerExtendedInfoCollection": true,
+                "enableW3CDistributedTracing": true,
+                "enableResponseHeaderInjection": true
+            }
+        }
+    }
+}
